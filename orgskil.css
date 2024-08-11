@@ -1,0 +1,245 @@
+*{
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Update the font family */
+    background-color: #f7f8fc;
+    color: #333;
+}
+
+.join {
+    background-color: #fff;
+    color: #000;
+    margin-right: 80px;
+}
+
+.navbar{
+    background: none;
+    width: Fixed (1,405px)px;
+    height: Hug (50px)px;
+    top: 15px;
+    left: 242px;
+    gap: 0px;
+    justify-items: space-between;
+    opacity: 0px;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.logo{
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.01px;
+    text-align: left;
+    color: #000000;
+    padding-left: 100px;
+}
+
+
+.login-btn{
+    background-color: #19252C;
+    width: 120px;
+    height: 50px;
+    gap: 0px;
+    border-radius: 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    color:#ffffff;
+    margin-right: 50px;
+}
+.join{
+    width: 120px;
+    height: 50px;
+    gap: 0px;
+    border-radius: 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    color:#000000;
+    margin-right: 80px;
+}
+
+/* Style for the line after the header */
+.header-line {
+    border: none; /* Remove default border */
+    height: 1px; /* Thickness of the line */
+    background-color: #4e4e4e; /* Color of the line */
+    margin: 1px; /* Space above and below the line */
+    width: auto; /* Adjust the width to match your layout */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hero-text {
+    max-width: 800px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    margin-left: 50px;
+    margin-top: 120px;
+}
+
+.hero-text .highlight {
+    color: #0056D2;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    margin-left: 50px;
+}
+
+.cta-btn {
+    width: 120px;
+    height: 50px;
+    gap: 0px;
+    border-radius: 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    color:#000000;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    margin-left: 50px;
+}
+
+.hero-image img {
+    width: 400px;
+    max-width: 100%;
+    margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text {
+        margin-bottom: 30px;
+    }
+    
+    .hero-image img {
+        width: 300px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Wrapper (Homepage 3)
+--------------------------------------------------------------*/
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.stat-card {
+    background-color: #fff; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    border-color: #3A1959;
+    border: 2px solid;
+    padding: 20px;
+    width: 300px; /* Adjust the width to match the image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow for a more pronounced effect */
+    margin: 20px 10px; /* Spacing between the cards */
+    text-align: left;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    font-size: 18px;
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.stat-card:hover {
+    transform: translateY(-10px); /* Lift the card slightly on hover */
+}
+
+.icon-container {
+    background-color: #E9F0FF; /* Light background color to match the image */
+    border-radius: 50%; /* Rounded icon background */
+    padding: 15px;
+    display: inline-block;
+    margin-bottom: 20px; /* Space between the icon and the text */
+}
+
+.fa-solid {
+    color: #3A1959; /* Darker icon color */
+    font-size: 30px; /* Icon size */
+}
+
+.text-description {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 20px 0; /* Margin below the description text */
+}
+
+.divider {
+    width: 50px;
+    height: 4px;
+    background: #E12963; /* Matching the divider color to the design */
+    margin: 10px 0;
+    border: none;
+}
+
+.number {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+    .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stat-card {
+        width: calc(100% - 40px); /* Full width with margin adjustments */
+        margin: 10px;
+    }
+}
+
+@media (min-width:320px) and (max-width: 699px) {
+    .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stat-card {
+        width: calc(100% - 40px); /* Full width with margin adjustments */
+        margin: 10px;
+    }
+}
